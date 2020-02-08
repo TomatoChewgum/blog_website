@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block title %} 更新文章 {% endblock title %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <br>
+            <form method="post" action=".">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="title">文章标题</label>
+                    <!-- 在 value 属性中指定文本框的初始值为旧的内容，即 article 对象中的 title 字段 -->
+                    <input type="text" class="form-control" id="title" name="title" value="{{ article.title }}">
+                </div>
+                 <!-- 文章分类 -->
+               <div class="form-group">
+                    <span>分类</span>
+                    <div class=" btn-group-toggle" data-toggle="buttons"> <!--class="btn-group btn-group-toggle"-->
+                            {% for cate in category_list %}
+                                 {% if cate.name == article.category.name %}
+                                    <label for="category" class="btn btn-outline-primary active">
+                                             <input type="radio" class="form-control " name="category" value="{{ cate.id }}" checked > {{ cate.name }}
+                                    </label>
+                                    {% else %}
+                                    <label for="category" class="btn btn-outline-primary ">
+                                            <input type="radio" class="form-control" name="category" value="{{ cate.id }} " > {{ cate.name }}
+                                    </label>
+                                {% endif %}
+                            {% endfor %}
+                     </div>
+                </div>
+                <div class="form-group">
+                    <span>标签</span>
+                    <label for="tag" class="col-3">
+                        <input type="text" id="tag" name="tag" class="form-control " value="{{ tag_list }}" >
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <label for="content">文章正文</label>
+                    <!-- 文本域不需要 value 属性，直接在标签体中嵌入数据即可 -->
+                    <textarea type="text" class="form-control" id="content" name="content" rows="12">{{ article.content }}</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">保存</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

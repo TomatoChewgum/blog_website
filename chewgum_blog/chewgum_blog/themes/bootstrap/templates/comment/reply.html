@@ -1,0 +1,96 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'prism/prism.css' %}">
+
+    <script src="{% static 'iconfont/iconfont.js' %}"></script>
+    <style>
+        .icon {
+          width: 1em;
+          height: 1em;
+          vertical-align: -0.15em;
+          fill: currentColor;
+          overflow: hidden;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        #wrapper {
+            min-height: 100%;
+            margin-bottom: -60px;
+        }
+
+        #footer,
+        #push {
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <form    action="."   method="POST"    id="reply_form"  >
+        {% csrf_token %}
+{#        <div class="form-group">#}
+{#                        <label for="content">#}
+{#                            <strong>我也要发言：</strong>#}
+{#                        </label>#}
+{#                        <textarea  type="text"  class="form-control"  id="content"  name="content" rows="2">#}
+{#                        </textarea>#}
+{#        </div>#}
+{#        <!-- 提交按钮 -->#}
+{#        <button type="submit" class="btn btn-primary ">发送</button>#}
+        <div class="form-group">
+            <div id="test">
+                {{ comment_form.media }}
+                {{ comment_form.content }}
+            </div>
+        </div>
+    </form>
+    <!-- 提交按钮 -->
+    <button onclick="confirm_submit({{ article_id }}, {{ parent_comment_id }})" class="btn btn-primary">发送</button>
+
+
+    <!-- csrf token -->
+    <script src="{% static 'csrf.js' %}"></script>
+
+    <script>
+    $(function(){
+        $(".django-ckeditor-widget").removeAttr('style');
+    });
+
+    function confirm_submit(article_id, comment_id){
+        // 从 ckeditor 中取值
+        let content = CKEDITOR.instances['id_content'].getData();
+        // 调用 ajax 与后端交换数据
+
+        console.log(content);
+        $.ajax({
+            url: '/comment/post-comment/' + article_id + '/' + comment_id,
+            type: 'POST',
+            data: {content: content},
+            csrfmiddlewaretoken:'{{ csrf_token }}',
+            // 成功回调
+            success: function(e){
+                if(e === '200 OK'){
+                    parent.location.reload(); // 刷新当前的父页面
+                }
+            }
+        })
+    }
+    </script>
+
+</body>
+</html>
