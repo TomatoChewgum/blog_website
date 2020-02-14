@@ -2,38 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="102e7306-6300-481b-a127-b413db2925e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/blog/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/blog/migrations/0002_auto_20200203_2154.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/blog/migrations/0003_auto_20200204_2327.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/blog/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/settings/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/settings/base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/settings/develop.py" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/settings/develop.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/demo_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/demo_index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.css" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.js" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.json" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/iconfont/iconfont.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/layer/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/static/layer/layer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/article/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/article/list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/themes/bootstrap/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chewgum_blog/chewgum_blog/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/comment/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/comment/migrations/0002_auto_20200207_0042.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/comment/migrations/0003_auto_20200207_1432.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/userprofile/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chewgum_blog/userprofile/migrations/0002_auto_20200204_2140.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +74,7 @@
       <updated>1581148157342</updated>
       <workItem from="1581148158525" duration="14400000" />
       <workItem from="1581332807208" duration="3127000" />
-      <workItem from="1581580548870" duration="47471000" />
+      <workItem from="1581580548870" duration="48578000" />
     </task>
     <servers />
   </component>
