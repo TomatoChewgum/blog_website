@@ -3,13 +3,21 @@
   <div class="container">
 
     <!-- 导航栏商标 -->
-    <a class="navbar-brand" href="#">我的博客</a>
+      <span >
+        <svg class="icon icon-header" aria-hidden="true" >
+          <use xlink:href="#icon-denglu" ></use>
+        </svg>
+        <a class="navbar-brand" href="/">breakwhile</a>
+    </span>
 
     <!-- 导航入口 -->
     <div>
       <ul class="navbar-nav">
         <!-- 条目 -->
-          <li class="nav-item">
+          <li class="nav-item ">
+          <a class="nav-link text-info font-weight-bold"  href="{% url 'valentine:520' %}">Valentine</a>
+        </li>
+       <li class="nav-item">
           <a class="nav-link" href="{% url 'blog:article-create' %}">写文章</a>
         </li>
         <li class="nav-item">

@@ -6,6 +6,7 @@ app_name = 'blog'
 
 urlpatterns = [
     # path函数将url映射到视图
+    path('', ArticleListView.as_view(), name='index'),
     path('article-list/', ArticleListView.as_view(), name='article-list'),
     path('article-detail/<int:article_id>/', ArticleDetailView.as_view(), name='article-detail'),
     path('article-create/', article_create, name='article-create'),

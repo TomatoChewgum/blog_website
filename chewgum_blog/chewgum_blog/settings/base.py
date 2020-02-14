@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     # 'taggit',  # 第三方插件 添加标签
     'ckeditor',  # 第三方插件 编辑器
     'mptt',   # 多级评论
+    'notifications',
+    'valentine',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -137,7 +139,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/tmp/static'
+# STATIC_ROOT = '/tmp/static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'themes', THEME, 'static'),
@@ -146,9 +148,9 @@ STATICFILES_DIRS = [
 # SMTP服务器，改为你的邮箱的smtp!
 EMAIL_HOST = 'smtp.qq.com'
 # 改为你自己的邮箱名！
-EMAIL_HOST_USER = '*****@foxmail.com'
+EMAIL_HOST_USER = 'chewgum@foxmail.com'
 # 你的邮箱密码
-EMAIL_HOST_PASSWORD = '******'
+EMAIL_HOST_PASSWORD = 'lwnktbevvdxijgic'
 # 发送邮件的端口
 EMAIL_PORT = 25
 # 是否使用 TLS

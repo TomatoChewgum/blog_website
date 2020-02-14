@@ -21,6 +21,8 @@ from django.conf.urls import url
 from django.conf.urls.static import static
 
 
+import notifications.urls
+
 """ 配置 RSS 和 sitemap 的urls"""
 from django.contrib.sitemaps import views as sitemap_views
 
@@ -32,11 +34,17 @@ urlpatterns = [
     # re_path('post/(?P<post_id>\d+).html',post_detail, name='post-detail'),
 
     # path('', PostListView.as_view(), name='index'),
+    path('', include('blog.urls', namespace='index')),
     path('admin/', admin.site.urls),
     path('article/', include('blog.urls', namespace='blog')),
     path('userprofile/', include('userprofile.urls', namespace='userprofile')),
     path('password-reset/', include('password_reset.urls')),
     path('comment/', include('comment.urls', namespace='comment')),
+
+
+    path('inbox/notifications/', include('notifications.urls', namespace='notifications')),
+
+    path('520/', include('valentine.urls', namespace='valentine')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
