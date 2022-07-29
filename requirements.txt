@@ -7,7 +7,7 @@ django-password-reset==2.0
 
 Markdown==3.1.1
 
-mistune==0.8.4
+mistune==2.0.3
 Pillow==7.0.0
 Pygments==2.5.2
 
